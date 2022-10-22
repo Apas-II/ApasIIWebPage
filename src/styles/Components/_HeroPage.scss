@@ -1,0 +1,124 @@
+  .HeroPage-Container{
+  background: $Primary-Dark;
+  box-sizing: border-box;
+  margin-top: 20vh;
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  @include PaddingDesktop;
+  color:$Grey5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 80vh;
+  box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
+
+  @media (max-width:$Small) {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+    @include PaddingMobile
+  }
+
+  .HeroPage-Container-Right{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right; 
+  width: 33%;
+  @media (max-width:$Small) {
+
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    height:33%;
+    
+  }
+  .HeroPage-Container-Right-icons{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    font-size:calc(2rem + 1vw);
+    cursor: pointer;
+    @media (max-width:$Small){
+      justify-content: center;
+      vertical-align:bottom;
+      align-items:flex-end;
+
+      
+    }
+  }
+  }
+  .HeroPage-Container-Left{
+    display:flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: center;
+    @media (max-width:$Small) {
+      height:33%;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .HeroPage-Container-Left-Span1{
+      font-weight: 200;
+      font-size: calc(1vw + 2.25rem)
+    }
+  .HeroPage-Container-Left-Span2{
+    font-weight: 700;
+    font-size: calc(4vw + 1.25rem);
+
+    
+  }
+  .HeroPage-Container-Left-Button{
+    background: $Triad-Gradient;
+    color:$Grey5;
+    border:none;
+    text-decoration: none;
+    text-align: center;
+    padding:  calc(0.5rem + 1vw)  calc(1rem + 1vw) ;
+    border-radius: 40px;
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+  }
+  .HeroPage-Container-Left-Button:hover{
+
+  cursor: pointer;
+
+  }
+  }
+
+
+  .Logo-HeroPage{
+
+    display: flex;
+    justify-content: center;
+    width: 33%;
+@media (max-width:$Small) {
+  height: 33%;
+}
+    align-items: center;
+  .Logo-HeroPage-img{
+    opacity: 0.5;
+    height: 30vw ;
+    width: 30vw;
+  }
+ 
+}
+  }
+
+  .Link-HeroPage{
+    position: absolute;
+    top:0;
+  }

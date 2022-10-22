@@ -1,0 +1,21 @@
+.ContactMe-Container{
+  background-color: $Primary-Dark;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  vertical-align: center;
+  height: 90vh;
+  color:$Grey5;
+  box-sizing: border-box;
+  @include PaddingDesktop;
+  box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
+@include PaddingMobile
+
+
+}
+
+.ContactMe{
+ @include Link-a-Scroll
+}
