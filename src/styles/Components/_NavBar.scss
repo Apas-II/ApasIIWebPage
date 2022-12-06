@@ -1,17 +1,17 @@
 .Navbar_Containter {
   display: flex;
-box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
   background: $Secondary-Dark;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
- padding: 1rem 2rem 1rem 2rem;
- position: fixed;
- width: 100%;
- top: 0;
- box-sizing: border-box;
- height: 20vh;
- z-index: 9;
+  padding: 1rem 2rem 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+  height: 20vh;
+  z-index: 9;
 
   .Options-Navbar {
     display: flex;
@@ -30,26 +30,26 @@ box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
       font-weight: 600;
       cursor: pointer;
     }
-    .span-Options-Navbar-a{
-      position:relative;
+    .span-Options-Navbar-a {
+      position: relative;
     }
     a:after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       transform: scaleX(0);
       height: 3px;
       bottom: 0;
       left: 0;
-      background-color:$Grey5;
+      background-color: $Grey5;
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;
     }
-    
-    a:hover{
+
+    a:hover {
       color: $Grey5;
     }
-   a:hover:after {
+    a:hover:after {
       transform: scaleX(1);
       transform-origin: bottom left;
     }
@@ -61,68 +61,65 @@ box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
     align-items: center;
     position: relative;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+
     .Menu-Options-Navbar-FaBars {
       width: 44px;
       height: 44px;
     }
-    .Menu-Options-Navbar-DropDown-Menu{
+    .Menu-Options-Navbar-DropDown-Menu {
       position: absolute;
-      right:0;
-      top:calc(100% + .25rem);
+      right: 0;
+      top: calc(100% + 0.25rem);
       list-style: none;
       background-color: $Primary-Dark;
       border-radius: 0.25rem;
       padding: 0.75rem;
-      box-shadow: 0 0 2px 5px rgba(0,0,0, .1) ;
-      opacity: 0;    
+      box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+      opacity: 0;
       pointer-events: none;
       transform: translateY(-10);
-      transition: opacity 150ms ease-in-out, transform 150ms ease-in-out ;
+      transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
       //font-size: 2rem;
       width: max-content;
-     
-      li{
-        padding: 0.50rem;
-      }
-      
-      a{
-        position:relative;
-        width: auto;
-        
+
+      li {
+        padding: 0.5rem;
       }
 
-      a:hover{
-        color: $Grey5;}
+      a {
+        position: relative;
+        width: auto;
+      }
+
+      a:hover {
+        color: $Grey5;
+      }
       a:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
       }
       a:after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         transform: scaleX(0);
         height: 3px;
         bottom: 0;
         left: 0;
-        background-color:$Grey5;
+        background-color: $Grey5;
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
       }
-      
     }
-    
+
     @media (max-width: $Small) {
       display: inline;
-    
-    
     }
   }
 
   .Logo-NavBar-img {
-    width: 88px ;
-    height: 88px ;
+    width: 88px;
+    height: 88px;
     @media (max-width: $Small) {
       width: 66px;
       height: 66px;
@@ -130,13 +127,11 @@ box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
   }
 }
 
-.Menu-Options-Navbar-DropDown:focus{
+.Menu-Options-Navbar-DropDown:focus {
   color: $Grey5;
-  .Menu-Options-Navbar-DropDown-Menu{
-   
+  .Menu-Options-Navbar-DropDown-Menu {
     opacity: 1;
-  pointer-events: auto;
- transform: translateY(0);
+    pointer-events: auto;
+    transform: translateY(0);
   }
- 
 }

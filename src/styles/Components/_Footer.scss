@@ -5,10 +5,44 @@
   text-align: center;
   vertical-align: center; 
   justify-content: space-between;
-  height: 10vh;
+ @include Link-a-Icons($Grey1);
   color: $Grey1;
   padding: 1rem 2rem 1rem 2rem;
   width: 100%;
 box-sizing: border-box;
-font-size: 0.75rem;
+font-size: calc(1vw + 0.5rem);
+@media (max-width:$Small) {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  
 }
+.Footer-Left{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+.Logo-Footer-img{
+  width: 44px;
+  height: 44px;
+  @media (max-width:$Small) {
+    display:none;
+  }
+}
+}
+.Footer-Center{
+  display:flex;
+  flex-direction: column;
+}
+
+.Footer-Right{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  .Footer-Right-icons{
+    font-size:calc(1rem + 1vw);  
+    padding-left:10px;
+    cursor: pointer;
+  }
+}
+}
+

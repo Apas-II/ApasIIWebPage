@@ -4,12 +4,12 @@
 $Primary:#4897E1;
 $Primary-Dark:#1F4161;
 $Primary-Gradient:linear-gradient(180deg, #4897E1 0%, #1F4161 100%);
-$Secondary:#8EBBE6;
+$Secondary:#275B8B;
 $Secondary-Dark:#3C4F61;
-$Secondary-Gradinent:linear-gradient(180deg, #8EBBE6 0%, #3C4F61 100%);
+$Secondary-Gradinent:linear-gradient(180deg, #275B8B 0%, #3C4F61 100%);
 $Terciary:#8EBBE6;
-$Terciary-Dark:#214466;
-$Terciary-Gradient:linear-gradient(180deg, #8EBBE6 0%, #214466 100%);
+$Terciary-Dark:#0B2742;
+$Terciary-Gradient:linear-gradient(180deg, #8EBBE6 0%, #0B2742 100%);
 
 //Greys
 $Grey1:#3D4348;
@@ -40,11 +40,18 @@ $Medium: 1200px;
   }
 }
 @mixin PaddingDesktop {
-  padding:10vh 2rem 10vh 2rem;
+  padding:5vh 2rem 5vh 2rem;
 }
 
 
 @mixin Link-a-Scroll {
   position:absolute;
   top:-20vh;
+}
+
+@mixin  Link-a-Icons ($Color){
+  a:visited { 
+    text-decoration: none; 
+    color: $Color
+  }
 }

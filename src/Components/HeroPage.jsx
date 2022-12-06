@@ -16,13 +16,19 @@ function HeroPage() {
     </div>
     <div className='HeroPage-Container-Right'>
     <div className='HeroPage-Container-Right-icons'>
+    <a target="_blank" href="">
     <FaInstagram className='HeroPage-Container-Right-icons-a'/>
+    </a>
     </div>
     <div className='HeroPage-Container-Right-icons'>
+    <a href='https://github.com/Apas-II?tab=repositories' target="_blank">
     <FaGithub className='HeroPage-Container-Right-icons-a' />
+    </a>
     </div>
     <div className='HeroPage-Container-Right-icons'>
+    <a href="https://www.linkedin.com/in/juanrayeb/" target="_blank">
     <FaLinkedin  className='HeroPage-Container-Right-icons-a' />
+    </a>  
     </div>
     </div>
       </div>

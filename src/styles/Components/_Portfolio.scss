@@ -1,18 +1,98 @@
-.PortFolio-Container{
+.PortFolio-Container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   vertical-align: center;
-  height: 100vh;
+  height: 80vh;
   color: $Grey1;
   box-sizing: border-box;
   @include PaddingDesktop;
-  box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
-  @include PaddingMobile
-}
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  @include PaddingMobile;
 
-.Link-Portfolio{
-  @include Link-a-Scroll
+  .Portfolio-Top {
+    height: 40%;
+
+    .Portfolio-Top-P {
+      font-size: calc(1.2vw + 0.7rem);
+    }
+  }
+  .Portfolio-Bottom {
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .Portfolio-Bottom-Window-Rail {
+      position: absolute;
+      height: 5%;
+      width: 60%;
+      background-color: $Secondary-Dark;
+      opacity: 0.1;
+    }
+    .Portfolio-Bottom-Window {
+      width: 35%;
+      display: flex;
+      justify-content: center;
+      .PortFolio-Carrousel {
+        cursor: grab;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        .PortFolio-Carrousel-Inner {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          height: 100%;
+
+          .PortFolio-Carrousel-Inner-Item-div {
+            display: flex;
+            flex-direction: column;
+
+            // the img ratio of width:height is 2:1
+            .PortFolio-Carrousel-Inner-Item {
+              min-height: 20rem;
+              min-width: 40rem;
+              position: relative;
+              padding: 2rem;
+              box-sizing: border-box;
+              filter: brightness(100%);
+              display: flex;
+              justify-content: center;
+              transition: filter ease-in-out 0.25s;
+              cursor: move;
+              img {
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+              }
+            }
+            .PortFolio-Carrousel-Inner-Item:hover {
+              transition: filter ease-in-out 0.25s;
+              filter: brightness(20%);
+            }
+          }
+        }
+        .Portfolio-Bottom-Window-Description {
+          position: absolute;
+          bottom: 50%;
+          right: 50%;
+          font-size: 1rem;
+          padding: 10px;
+          color: $Grey5;
+        }
+      }
+    }
+  }
+  .Link-Portfolio {
+    @include Link-a-Scroll;
+  }
 }

@@ -1,21 +1,61 @@
-.ContactMe-Container{
+.ContactMe-Container {
   background-color: $Primary-Dark;
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
+
   text-align: center;
   vertical-align: center;
-  height: 90vh;
-  color:$Grey5;
+  height: 80vh;
+  color: $Grey5;
   box-sizing: border-box;
   @include PaddingDesktop;
-  box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
-@include PaddingMobile
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  @include PaddingMobile;
 
+  .ContactMe {
+    @include Link-a-Scroll;
+  }
+  .ContactMe-Top {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+  }
+  .Maindiv-ContactMeForum {
+    position: relative;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
 
-}
+    align-items: center;
+    .Primarydiv-ContactMeForum {
+      position: absolute;
+      width: 9em;
+      aspect-ratio: 1/1.2;
+      background-color: $Primary;
+      transform: rotateX(10deg);
+    }
+    .Terciarydiv-ContactMeForum {
+      position: absolute;
+      width: 9em;
+      aspect-ratio: 1/1.2;
+      transform: translate(10%) rotate(3deg);
+      background-color: $Terciary;
+    }
 
-.ContactMe{
- @include Link-a-Scroll
+    .Secondarydiv-ContactMeForum {
+      position: absolute;
+      width: 9em;
+      aspect-ratio: 1/1.2;
+      background-color: $Secondary;
+      transform: translate(-10%) rotate(-3deg);
+    }
+  }
+  .ContactMe-Bottom {
+    height: 5%;
+    align-items: flex-end;
+  }
 }
