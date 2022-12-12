@@ -1,5 +1,5 @@
 .ContactMe-Container {
-  background-color: $Primary-Dark;
+  background-color: $Terciary-Dark;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -7,7 +7,7 @@
 
   text-align: center;
   vertical-align: center;
-  height: 80vh;
+  height: 100vh;
   color: $Grey5;
   box-sizing: border-box;
   @include PaddingDesktop;
@@ -33,25 +33,61 @@
     align-items: center;
     .Primarydiv-ContactMeForum {
       position: absolute;
-      width: 9em;
+      width: 13em;
       aspect-ratio: 1/1.2;
       background-color: $Primary;
-      transform: rotateX(10deg);
-    }
-    .Terciarydiv-ContactMeForum {
-      position: absolute;
-      width: 9em;
-      aspect-ratio: 1/1.2;
-      transform: translate(10%) rotate(3deg);
-      background-color: $Terciary;
+      transform: translate(10%) rotate(5deg);
     }
 
     .Secondarydiv-ContactMeForum {
       position: absolute;
-      width: 9em;
+      width: 13em;
       aspect-ratio: 1/1.2;
       background-color: $Secondary;
-      transform: translate(-10%) rotate(-3deg);
+      transform: translate(-10%) rotate(-5deg);
+    }
+    .Terciarydiv-ContactMeForum {
+      position: absolute;
+      width: 13em;
+      aspect-ratio: 1/1.2;
+      background-color: $Terciary;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5em;
+      box-sizing: border-box;
+
+      input,
+      textarea {
+        background-color: $Terciary;
+        width: 100%;
+        border: none;
+      }
+      textarea {
+      }
+      .Input-Bottom-Sumit {
+        background: $Triad-Gradient;
+        color: $Grey5;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 40px;
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        transition: opacity ease-in-out 200ms;
+        transition: transform ease-in-out 200ms;
+        opacity: 0.9;
+        justify-content: center;
+        justify-self: flex-end;
+      }
+      .Input-Bottom-Sumit:hover {
+        cursor: pointer;
+        transition: opacity ease-in-out 200ms;
+        transition: transform ease-in-out 200ms;
+        transform: scale(1.1);
+        opacity: 1;
+      }
     }
   }
   .ContactMe-Bottom {

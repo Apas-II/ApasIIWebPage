@@ -4,6 +4,7 @@ import {FaArrowLeft, FaArrowRight}from "react-icons/fa";
 import DataProyects from "./Proyects.js"
 import {motion, MotionConfig} from "framer-motion";
 import { Link } from 'react-scroll'
+
 function PortfolioWindowComponent() {
   const [width, setWidth] = useState(0)
   const carrousel = useRef();

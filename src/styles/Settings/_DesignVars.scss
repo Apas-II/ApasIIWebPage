@@ -1,57 +1,53 @@
-            // COLORS//
+// COLORS//
 
 // Core
-$Primary:#4897E1;
-$Primary-Dark:#1F4161;
-$Primary-Gradient:linear-gradient(180deg, #4897E1 0%, #1F4161 100%);
-$Secondary:#275B8B;
-$Secondary-Dark:#3C4F61;
-$Secondary-Gradinent:linear-gradient(180deg, #275B8B 0%, #3C4F61 100%);
-$Terciary:#8EBBE6;
-$Terciary-Dark:#0B2742;
-$Terciary-Gradient:linear-gradient(180deg, #8EBBE6 0%, #0B2742 100%);
+$Primary: #4897e1;
+$Primary-Dark: #1f4161;
+$Primary-Gradient: linear-gradient(180deg, #4897e1 0%, #1f4161 100%);
+$Secondary: #275b8b;
+$Secondary-Dark: #3c4f61;
+$Secondary-Gradinent: linear-gradient(180deg, #275b8b 0%, #3c4f61 100%);
+$Terciary: #8ebbe6;
+$Terciary-Dark: #0b2742;
+$Terciary-Gradient: linear-gradient(180deg, #8ebbe6 0%, #0b2742 100%);
 
 //Greys
-$Grey1:#3D4348;
-$Grey2:#626B74;
-$Grey3:#919FAC;
-$Grey4:#A4B3C1;
-$Grey5:#D0E0EE;
-
+$Grey1: #3d4348;
+$Grey2: #626b74;
+$Grey3: #919fac;
+$Grey4: #a4b3c1;
+$Grey5: #d0e0ee;
+$Grey6: #f5faff;
 // Triad
-$Triad1:#E0655E;
-$Triad2:#F75C8F;
-$Triad-Gradient:linear-gradient(180deg, #E0655E 0%, #F75C8F 100%);
-
-
+$Triad1: #e0655e;
+$Triad2: #f75c8f;
+$Triad-Gradient: linear-gradient(180deg, #e0655e 0%, #f75c8f 100%);
 
 // Media Quaries
 
 $VerySmall: 320px;
-$Small:680px;
+$Small: 680px;
 $Medium: 1200px;
-
 
 //Mixings
 
 @mixin PaddingMobile {
-  @media (max-width:$Small) {
-    padding:5vh 1rem 5vh 1rem;  
+  @media (max-width: $Small) {
+    padding: 5vh 1rem 5vh 1rem;
   }
 }
 @mixin PaddingDesktop {
-  padding:5vh 2rem 5vh 2rem;
+  padding: 5vh 2rem 5vh 2rem;
 }
-
 
 @mixin Link-a-Scroll {
-  position:absolute;
-  top:-20vh;
+  position: absolute;
+  top: 0;
 }
 
-@mixin  Link-a-Icons ($Color){
-  a:visited { 
-    text-decoration: none; 
-    color: $Color
+@mixin Link-a-Icons($Color) {
+  a:visited {
+    text-decoration: none;
+    color: $Color;
   }
 }

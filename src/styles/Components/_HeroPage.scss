@@ -1,147 +1,127 @@
-  .HeroPage-Container{
-  background: $Primary-Dark;
+.HeroPage-Container {
+  background: $Terciary-Dark;
   box-sizing: border-box;
-  margin-top: 20vh;
-  display:flex;
+  display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
   @include PaddingDesktop;
-  color:$Grey5;
+  color: $Grey5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: 80vh;
-  box-shadow: 0 0 4px 4px rgba(0,0,0, 0.25) ;
-  @include  Link-a-Icons($Grey4);
-  @media (max-width:$Small) {
+  height: 100vh;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  @include Link-a-Icons($Grey6);
+  @media (max-width: $Small) {
     flex-direction: column;
     justify-content: space-evenly;
-    align-items:center;
-    text-align: center;
-    @include PaddingMobile
-  }
-
-  .HeroPage-Container-Right{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: right; 
-  width: 33%;
-  @media (max-width:$Small) {
-
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    vertical-align: center;
-    height:33%;
-    
+    @include PaddingMobile;
   }
-  .HeroPage-Container-Right-icons{
+
+  .HeroPage-Container-Right {
     display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: right;
-    align-items: center;
-    text-align: center;
-    vertical-align: center;
-    font-size:calc(2rem + 1vw);
-    :hover{
-      color: $Grey5;
-    }
-   
-    @media (max-width:$Small){
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    width: 33%;
+    @media (max-width: $Small) {
+      flex-direction: row;
+      width: 100%;
       justify-content: center;
-      vertical-align:bottom;
-      align-items:flex-end;
+      align-items: center;
+      text-align: center;
+      vertical-align: center;
+      height: 33%;
+    }
+    .HeroPage-Container-Right-icons {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: right;
+      align-items: center;
+      text-align: center;
+      vertical-align: center;
+      font-size: calc(2rem + 1vw);
 
-      
-    }
-    .HeroPage-Container-Right-icons-a{
-      cursor: pointer;
-  
+      :hover {
+        color: $Grey5;
+      }
+
+      @media (max-width: $Small) {
+        justify-content: center;
+        vertical-align: bottom;
+        align-items: flex-end;
+      }
+      .HeroPage-Container-Right-icons-a {
+        cursor: pointer;
+      }
     }
   }
-  }
-  .HeroPage-Container-Left{
-    display:flex;
+  .HeroPage-Container-Left {
+    display: flex;
     flex-direction: column;
     width: 33%;
     justify-content: center;
-    color:$Grey5;
-    @media (max-width:$Small) {
-      height:33%;
+    color: $Grey5;
+    @media (max-width: $Small) {
+      height: 33%;
       flex-direction: column;
       width: 100%;
       justify-content: center;
       align-items: center;
-     
     }
 
-    .HeroPage-Container-Left-Span1{
+    .HeroPage-Container-Left-Span1 {
       font-weight: 200;
-      font-size: calc(1vw + 2.25rem)
+      font-size: calc(1vw + 2.25rem);
     }
-  .HeroPage-Container-Left-Span2{
-    font-weight: 700;
-    font-size: calc(4vw + 1.25rem);
-  
-
-  }
-  .HeroPage-Container-Left-Button{
-    background: $Triad-Gradient;
-    color:$Grey5;
-    border:none;
-    text-decoration: none;
-    text-align: center;
-    padding:  calc(0.5rem + 1vw)  calc(1rem + 1vw) ;
-    border-radius: 40px;
-    width: fit-content;
-    display: flex;
-    gap: 1rem;
-    transition:opacity ease-in-out 200ms;
-    transition:transform ease-in-out 200ms;
-    opacity:0.9;
-  
-
- 
-  }
-  .HeroPage-Container-Left-Button:hover{
-
-  cursor: pointer;
-  transition: opacity ease-in-out 200ms;
-  transition:transform ease-in-out 200ms;
-    transform:scale(1.1);
-    opacity: 1;
-  }
+    .HeroPage-Container-Left-Span2 {
+      font-weight: 700;
+      font-size: calc(4vw + 1.25rem);
+    }
+    .HeroPage-Container-Left-Button {
+      background: $Triad-Gradient;
+      color: $Grey5;
+      border: none;
+      text-decoration: none;
+      text-align: center;
+      padding: calc(0.5rem + 1vw) calc(1rem + 1vw);
+      border-radius: 40px;
+      width: fit-content;
+      display: flex;
+      gap: 1rem;
+      transition: opacity ease-in-out 200ms;
+      transition: transform ease-in-out 200ms;
+      opacity: 0.9;
+    }
+    .HeroPage-Container-Left-Button:hover {
+      cursor: pointer;
+      transition: opacity ease-in-out 200ms;
+      transition: transform ease-in-out 200ms;
+      transform: scale(1.1);
+      opacity: 1;
+    }
   }
 
-
-  .Logo-HeroPage{
-
+  .Logo-HeroPage {
     display: flex;
     justify-content: center;
     width: 33%;
     align-self: center;
-@media (max-width:$Small) {
-  height: 80%;
- 
-}
+    @media (max-width: $Small) {
+      height: 40%;
+    }
     align-items: center;
-  .Logo-HeroPage-img{
-    opacity: 0.5;
-    height:clamp(150px, 30vw, 30vw) ;
-    width: clamp(150px, 30vw, 30vw) ;
-   
+    .Logo-HeroPage-img {
+      opacity: 0.5;
+      height: clamp(150px, 30vw, 30vw);
+      width: clamp(150px, 30vw, 30vw);
+    }
   }
- 
 }
-  }
 
-  .Link-HeroPage{
-    position: absolute;
-    top:0;
-  }
-
-
-  
+.Link-HeroPage {
+  position: absolute;
+  top: 0;
+}

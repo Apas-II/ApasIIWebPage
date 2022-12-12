@@ -1,7 +1,11 @@
 .Navbar_Containter {
   display: flex;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
-  background: $Secondary-Dark;
+
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(11, 39, 64, 1) 100%
+  );
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +14,7 @@
   width: 100%;
   top: 0;
   box-sizing: border-box;
-  height: 20vh;
+  height: 15vh;
   z-index: 9;
 
   .Options-Navbar {
@@ -26,7 +30,7 @@
 
     .span-Options-Navbar {
       margin-left: 1.25rem;
-      color: $Grey4;
+      color: $Grey6;
       font-weight: 600;
       cursor: pointer;
     }
@@ -57,7 +61,7 @@
 
   .Menu-Options-Navbar-DropDown {
     display: none;
-    color: $Grey4;
+    color: $Grey6;
     align-items: center;
     position: relative;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -120,6 +124,8 @@
   .Logo-NavBar-img {
     width: 88px;
     height: 88px;
+    opacity: 0.5;
+
     @media (max-width: $Small) {
       width: 66px;
       height: 66px;
@@ -128,7 +134,7 @@
 }
 
 .Menu-Options-Navbar-DropDown:focus {
-  color: $Grey5;
+  color: $Grey6;
   .Menu-Options-Navbar-DropDown-Menu {
     opacity: 1;
     pointer-events: auto;
